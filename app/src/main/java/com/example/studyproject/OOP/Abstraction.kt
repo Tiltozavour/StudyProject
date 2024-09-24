@@ -16,7 +16,6 @@ abstract class AbstractExample(val name:String){ //Абстрактные кла
     }
 }
 
-
 fun main() {
    // AbstractExample("John") //Абстрактные классы можно только унаследовать, создавать экземпляры данного класса нельзя
     GetAbstract("John").anotherFunction()

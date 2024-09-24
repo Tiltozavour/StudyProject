@@ -14,7 +14,7 @@ class Child() : Parent() { // класс -наследник может взаи
     fun printParentNumber(){
         println("Parent " + Parent().firstNumberForExample)
     }
-    override fun doSmthg() { // либо изменять поведение
+    override fun doSmthg() { // либо изменять поведение(полиморфизм)
         println("Nope")
     }
 }
