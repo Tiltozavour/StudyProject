@@ -1,8 +1,8 @@
 package com.example.studyproject.lamda
 
 // Функции высшего порядка, это функции которые принимают функцию как параметр...
-fun funHighParametr(firstNum:Int, secondNm:Int, someFun:(Int,Int) -> Int){
-    val result = someFun(firstNum,secondNm) // прописываем параметры для функции
+fun funHighParametr(firstNum:Int, secondNm:Int, someFun:(Int,Int) -> Int){ // функция принимает два параметра и функцию-параметр
+    val result = someFun(firstNum,secondNm) // прописываем какими данными может пользоваться функция
     println(result)
 }
 
