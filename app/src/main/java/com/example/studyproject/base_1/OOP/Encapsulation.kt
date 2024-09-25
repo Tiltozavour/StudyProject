@@ -1,4 +1,4 @@
-package com.example.studyproject.OOP
+package com.example.studyproject.base_1.OOP
 
 // Инкапсуляция
 // Public и Private

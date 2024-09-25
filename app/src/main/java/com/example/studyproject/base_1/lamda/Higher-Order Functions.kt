@@ -1,4 +1,4 @@
-package com.example.studyproject.lamda
+package com.example.studyproject.base_1.lamda
 
 // Функции высшего порядка, это функции которые принимают функцию как параметр...
 fun funHighParametr(firstNum:Int, secondNm:Int, someFun:(Int,Int) -> Int){ // функция принимает два параметра и функцию-параметр

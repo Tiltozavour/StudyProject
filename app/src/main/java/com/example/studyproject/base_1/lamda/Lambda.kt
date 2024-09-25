@@ -1,4 +1,4 @@
-package com.example.studyproject.lamda
+package com.example.studyproject.base_1.lamda
 
 
 // лямбды - сокращенные виды высших функции

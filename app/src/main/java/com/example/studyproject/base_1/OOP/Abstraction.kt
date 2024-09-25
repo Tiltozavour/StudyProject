@@ -1,4 +1,4 @@
-package com.example.studyproject.OOP
+package com.example.studyproject.base_1.OOP
 
 abstract class AbstractExample(val name:String){ //Абстрактные классы определяют поведение для классов наследников.
     fun doSmthg(){
@@ -7,7 +7,7 @@ abstract class AbstractExample(val name:String){ //Абстрактные кла
         abstract fun doSmthAbstract() //абстрактные функции не имеют реализации
 }
 
- class GetAbstract(name: String):AbstractExample(name) {
+ class GetAbstract(name: String): AbstractExample(name) {
      fun  anotherFunction(){
          println("Hello?")
      }
