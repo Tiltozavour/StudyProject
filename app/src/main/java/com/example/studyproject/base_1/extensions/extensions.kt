@@ -30,5 +30,6 @@ fun main() {
     val arrayExample:ArrayList<Int> = arrayListOf(1,2,57,133)
         arrayExample.methodPrint()
 
+
 }
 
