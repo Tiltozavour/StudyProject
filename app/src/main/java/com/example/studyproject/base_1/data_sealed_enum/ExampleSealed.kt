@@ -1,3 +1,4 @@
+/*
 package com.example.studyproject.base_1.data_sealed_enum
 
 sealed class ExampleSealed() { //Sealed-классы позвляют асширит возможности enum, чтобы описывать несколько состояний, а не только константы
@@ -6,14 +7,30 @@ sealed class ExampleSealed() { //Sealed-классы позвляют асшир
             println("Hello")
         }
     }
-
     class Two() : ExampleSealed() {
         fun anotherGreetings() {
             println("AnotherHello")
         }
     }
 
-    data class Three(val name: String)
+}
+
+
+    sealed interface stateInterface{
+        fun getFirstState()
+        fun getSecondState()
+    }
+
+sealed class ViewState(){
+    class One():stateInterface {
+        override fun getFirstState() {
+            println("такой стейт")
+        }
+        override fun getSecondState() {
+            println("другой стейт")
+        }
+    }
+
 }
 
 class Another() :
@@ -23,14 +40,16 @@ fun main() {
     val choice = ExampleSealed.One()
     choice.greetings()
 
-    fun anotherChoice(sealedTest: ExampleSealed) { // также через when оператор
+    val state = ViewState.One()
+
+    fun anotherChoice(sealedTest: ViewState) { // также через when оператор
         return when (sealedTest) {
-            is ExampleSealed.One -> println("Hello")
-            is ExampleSealed.Two -> println("World")
+            is -> println("Hello")
             else -> (println("nope"))
         }
     }
-    anotherChoice(choice)
+    anotherChoice(state)
 
 
 }
+*/
