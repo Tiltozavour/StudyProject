@@ -15,8 +15,12 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    private val viewModel by lazy {
+    private val viewModelCoroutines by lazy {
         ViewModelProvider(this)[Coroutines::class.java]
+    }
+
+    private val viewModelCoroutinesException by lazy {
+        ViewModelProvider(this)[CoroutinesException::class.java]
     }
 
 
@@ -29,11 +33,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        with(viewModel){
+       /* with(viewModelCoroutines){
             getAll()
             getAcyncOrLaunch()
             getStream()
+        }*/
+        with(viewModelCoroutinesException){
+            //ordinaryFun()
+           smtErrorMethod()
         }
+
+
 
     }
 }

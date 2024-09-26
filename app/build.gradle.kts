@@ -49,6 +49,10 @@ dependencies {
     //Coroutines
     implementation(libs.kotlinx.coroutines.android)
 
+    //Lifecycle
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
