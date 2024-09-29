@@ -33,15 +33,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-       /* with(viewModelCoroutines){
-            getAll()
-            getAcyncOrLaunch()
-            getStream()
-        }*/
-        with(viewModelCoroutinesException){
-            //ordinaryFun()
-           smtErrorMethod()
-        }
+        /* with(viewModelCoroutines){
+             getAll()
+             getAcyncOrLaunch()
+             getStream()
+         }*/
+        /*   with(viewModelCoroutinesException){
+               //ordinaryFun()
+              smtErrorMethod()
+           }*/
 
 
 
